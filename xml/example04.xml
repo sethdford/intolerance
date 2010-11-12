@@ -1,0 +1,9 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<config>
+	<intro fadeIn=".5" fadeOut=".5" loop="true"/>
+	<item type="image" color="limeHL" areaY="8" areaX="4" duration="3" maxLight="20" effect="outlineBlack" resource="resources/images/Envato_Network.png" />
+	<item type="image" color="fireHL" areaY="4" areaX="4" duration="3" maxLight="20" effect="outlineBlack" resource="resources/images/VideoHive.png" />
+	<item type="image" color="purpleHL" areaY="4" areaX="4" duration="3" maxLight="20" effect="outlineBlack" resource="resources/images/FlashDen.png" />
+	<item type="image" color="monoHL" areaY="4" areaX="4" duration="3" maxLight="50" effect="outlineBlack" resource="resources/images/ThemeForest_Logo.png" />
+	<item type="image" color="oceanHL" areaY="4" areaX="4" duration="3" maxLight="30" effect="outlineBlack" resource="resources/images/GraphicRiver.png" />
+</config>

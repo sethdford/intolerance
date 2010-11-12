@@ -1,0 +1,212 @@
+Embedded fonts are often used in flash project: they allows things
+like rotation/alpha effects on text, plus end user is not forced to have
+the fonts installed to his system.
+
+However, there are drawbacks: 
+- swf size grows
+- project needs to be recompiled each time a new font has to be added/removed
+
+But here comes "runtime font loading" : a new tecnique which allows flash 
+movies/components to load fonts from external file.
+
+Basicly it works like that:
+
+- main movie has no embedded fonts
+- each font is embedded in a single swf called font package (FP)
+- main movie loads font package only when needed
+
+This means more flexibility and less work, since once you have created
+a bunch of FP, you can reuse them each time you want.
+
+FP can be built with FLASH IDE or with FLEX opensource sdk; this folder contains
+examples for using both methods, each one with his pros/cons:
+
+FLASH IDE has a simpler setup and works also with bitmap fonts but CS3 is needed,
+and you are forced to embed entire fonts instead of custom defined characters ranges
+
+FLEX sdk allows you to choose which chars to embed for each fonts, can be freely
+downloaded from ADOBE but has a lesser simple setup and doesn't work with bitmap fonts.
+
+Both methods are able to generate FPs made by one or more fonts: think like
+embedding normal, bold and italic style of a specific font in a single FP.
+
+Let's start from folder structure:
+
+- fonts .ttf files
+- flex  .as FLEX examples
+- flash .fla FLASH examples
+- test  .swf testing folder
+
+test.as     \
+test.swf     > test application for checking FPs
+test.html   /
+
+Once built a swf FP, just put it in the test folder, run test.html, select the FP and
+if all is ok, you'll see the names of all embedded fonts.
+
+************ FLASH - BEFORE START ************
+
+First things is: you need to install (on windows) each font before building the relative FP.
+To compile provided examples, open the "fonts" and install all bundled .ttf 
+
+"flash" folder contains 4 examples:
+
+1) Vera.fla     Bitstream Vera Sans (normal)
+2) VeraBold.fla Bitstream Vera Sans (bold)
+3) Vera.fla     Bitstream Vera Sans (normal + bold)
+4) Silkscreen   Silkscreen (bitmap)
+
+1,2,4 are single font FPs, while is multiple font FP
+
+Open one example (or more), publish it, copy the generated swf in the test folder and run
+test.html to see how it looks.
+
+************ FLASH - SINGLE FONT FP ************
+
+We'll see now how to build FP for single new font "Caviar Dreams": so first download it from: 
+
+http://www.fontsquirrel.com/fonts/download/Caviar-Dreams
+
+Unpack the archive in the "font" folder and install all the fonts (on windows), then:
+
+01) Open "flash" folder
+02) Open Vera.fla
+03) Save as: CaviarDreams
+04) Double click "A" in library
+05) Choose "Caviar Dreams" and click OK
+06) Go to File menu and click on publish
+07) Save the fla
+
+You should now see "CaviarDreams.swf" in the "flash" folder, move it in the "test" folder,
+run test.html, click the "Browse" button, choose CaviarDreams.swf and click "Check".
+
+If a "Caviar Dreams" text formatted with the new font is showed, everything worked as expected and
+the "CaviarDreams.swf" FP is ready
+
+Please remember to always use the displayed text as font name, in this case use "Caviar Dreams" and
+not "CaviarDreams" or things won't work.
+
+************ FLASH - MULTIPLE FONT FP ************
+
+We'll see now how to build FP for multiple styles (normal and bold) of "Caviar Dreams",
+see previous example for how to install the font, then:
+
+01) Open "flash" folder
+02) Open VeraPack.fla
+03) Save as: CaviarDreamsPack
+04) Double click "A" next to "Vera" in library
+05) Change name from "Vera" to "Caviar Dreams"
+06) Choose "Caviar Dreams" from dropdown list and click OK
+07) Right click on "A" next to "Vera" in library and choose "Linkage"
+08) Change class from "Vera" to "CaviarDreams"
+09) Double click "A" next to "Vera (bold)" in library
+10) Change name from "Vera (bold)" to "Caviar Dreams (bold)"
+11) Choose "Caviar Dreams" from dropdown list, check bold and click OK
+12) Right click on "A" next to "Vera (bold)" in library and choose "Linkage"
+13) Change class from "VeraBold" to "CaviarDreamsBold"
+14) Edit actionscript code on first frame
+15) Change "Font.registerFont(Vera)" to "Font.registerFont(CaviarDreams)"
+16) Change "Font.registerFont(VeraBold)" to "Font.registerFont(CaviarDreamsBold)"
+17) Go to File menu and click on publish
+18) Save the fla
+
+Test the "CaviarDreamsPack.swf" FP as explained in the previous examples but this time
+you should see 2 "Caviar Dreams" texts, one for each embedded style (normal and bold)
+
+
+************ FLEX - BEFORE START ************
+
+Flex method doesn't force you install (on windows) the fonts, since it works directly with
+.ttf files.
+Other benefit is that you can defined which char range you need for each font.
+However, it doesn't work with bitmap fonts so, in this case, use the Flash method.
+
+Please note: for use Flex, you need to have Java installed on your system
+
+First thing is download opensource sdk from ADOBE:
+
+http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+3
+
+from "Stable Builds", click on the first "Open Source Flex SDK"
+
+Unpack the archive in a folder and call it "flexSDK"
+
+01) Open the "flex" folder
+02) Move "build.bat" and "font-config.xml" in the "flexSDK" folder
+03) Create a shortcut for "build.bat" in the "flexSDK" folder
+04) Move the shortcut from "flexSDK" to "flex" folder and name it "build"
+
+Setup is ready, to compile FPs just drag one (or more) examples .as files
+on the build shortcut.
+
+When the build process ends, you'll get the swfs in the same "flex" folder.
+
+************ FLEX - SINGLE FONT FP ************
+
+We'll see now how to build FP for single new font "Caviar Dreams": so first download it from: 
+
+http://www.fontsquirrel.com/fonts/download/Caviar-Dreams
+
+then unpack in the font folder.
+
+01) Open Vera.as
+02) Save as CaviarDreams.as
+03) Change class from "Vera" to "CaviarDreams"
+04) Change "source" from "../fonts/Vera.ttf" to "../fonts/CaviarDreams.ttf"
+05) Change "fontFamily" from "Bitstream Vera Sans" to "Caviar Dreams"
+06) Save
+07) Drag CaviarDreams.as on "build"
+
+"CaviarDreams.swf" FP has been built in the "flex" folder, you can test it as explained in FLASH section.
+
+************ FLEX - MULTIPLE FONT FP ************
+
+We'll see now how to build FP for multiple styles (normal and bold) of "Caviar Dreams",
+see previous example for how download the font
+
+01) Open VeraPack.as
+02) Save as CaviarDreamsPack.as
+03) Change class from "VeraPack" to "CaviarDreamsPack"
+04) Change first "source" from "../fonts/Vera.ttf" to "../fonts/CaviarDreams.ttf"
+05) Change first "fontFamily" from "Bitstream Vera Sans" to "Caviar Dreams"
+06) Change class from "Vera:Class" to "CaviarDreams:Class"
+07) Change second "source" from "../fonts/Vera-Bold.ttf" to "../fonts/CaviarDreams_Bold.ttf"
+08) Change second "fontFamily" from "Bitstream Vera Sans" to "Caviar Dreams"
+09) Change class from "VeraBold:Class" to "CaviarDreamsBold:Class"
+10) In the font Array, change "Vera" to "CaviarDreams" and "VeraBold" to "CaviarDreamsBold"
+11) Drag CaviarDreamsPack.as on "build"
+
+"CaviarDreams.swf" FP has been built in the "flex" folder
+
+************ FLEX - CHARACTERS RANGES ************
+
+Flex allows to embed only defined characters range instead of a whole font.
+The things is controlled by "unicodeRange" paramer which, by default, is set to "Basic Latin" 
+
+Other valid ranges are:
+
+    Uppercase
+    Lowercase
+    Numerals
+    Punctuation
+    Basic Latin
+    Japanese Kana
+    Japanese Kanji - Level 1
+    Japanese (All)
+    Basic Hangul
+    Hangul (All)
+    Traditional Chinese - Level 1
+    Traditional Chinese (All)
+    Simplified Chinese - Level 1
+    Chinese (All)
+    Thai
+    Devanagari
+    Latin I
+    Latin Extended A
+    Latin Extended B
+    Latin Extended Add'l
+    Greek
+    Cyrillic
+    Armenian
+    Arabic
+    Hebrew

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-15" />
+		<title>BackLight V2 Intro and text effect - example 4</title>
+		<link rel="stylesheet" href="resources/style.css">
+		<script type="text/javascript" src="resources/js/swfobject.js"></script>
+		<script type="text/javascript" src="resources/js/fixMouseWheel.min.js"></script>
+		<script type="text/javascript">
+			swfobject.embedSWF("introBackLight.swf", "showItem", "100%", "100%", "9.0.0","",{
+				// flash vars
+				"intro.xml":"xml/example04.xml"
+			},{
+				// params
+				bgcolor:"#000000",
+				allowfullscreen:"true"
+			});
+		</script>
+		<style>
+			.itemContainer {
+				width: 590px;
+				height: 300px;
+			}
+		</style>
+	</head>   
+	
+	
+	<body>
+		<div class="itemContainer">
+			<div id="showItem"></div>
+		</div>
+		<div class="container">
+			<div class="examples" id="examples">
+				<div class="right">
+					<div>SELECT EXAMPLE</div>
+					<a href="index.html">01</a>
+					<a href="example02.html">02</a>
+					<a href="example03.html">03</a>
+					<a href="example04.html" class="selected">04</a>
+					<a href="example05.html">05</a>
+				</div>
+			</div>
+			<div class="description">
+				<h1>Multiple logos intro without music</h1>
+				This example has no soundtrack / background<br>
+				It uses just external images and loop mode is set to "true"
+			</div>
+		</div>
+	</body>
+</html>

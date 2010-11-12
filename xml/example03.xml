@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<config>
+	<intro fadeIn="2" fadeOut=".5" loop="false" />
+	
+	<background type="gradient" color="0xFF7722" color2="0x2D292C" />
+	
+	<soundtrack resource="resources/audio/ScottWillsOriginalIntro.mp3" volume="100" />
+	
+	<item type="image" color="sepiaHL" areaY="4" areaX="4" start="0" duration="7" wait="1"  maxLight="20" effect="outlineBlack" resource="resources/images/ActiveDen.png" />
+	
+</config>

@@ -1,0 +1,30 @@
+You only need to recompile backlight intro in case
+of changes made to actionscript sources.
+
+Please remember to always test the recompiled swf using provided html templates.
+That's because you need to provide a configuration trough xml or flashVars 
+
+
+
+***************** FLASH IDE *****************
+
+src/introBackLight.fla
+
+SWFs will be builded in the parent folder (the one with html templates)
+This way they can be tested in browser.
+
+***************** FLASH DEVELOP *****************
+
+src/introBackLight.as3proj
+
+SWFs will be builded in the parent folder (the one with html templates)
+This way they can be tested in browser.
+
+***************** FLEX BUILDER *****************
+
+To import the project:
+
+File -> Import -> Flex Project
+
+Now select "Project folder" and browse to folder in which you have unzipped
+downloaded archive.

@@ -1,0 +1,107 @@
+<config>
+	
+	<intro fadeIn="0.5" fadeOut="1" loop="true"/>
+	
+	<background type="spectrum" />
+	
+	<soundtrack resource="resources/audio/vanessasdub_flashden.mp3" volume="100" />
+	
+	<external font="resources/fonts/Sapir.swf" />
+	
+	<style><![CDATA[
+		title {
+			color: #FFD209;
+			font-family: Sapir Sans;
+			font-size: 50px;
+			text-align: left;
+		}
+		description {
+			color: #FFFFFF;
+			font-family: Sapir Sans;
+			font-size: 30px;
+			text-align: left;
+		}
+
+	]]></style>
+
+	
+	<item type="image" color="oceanHL" start="0" duration="3" resource="resources/images/newLogo.png" >
+	</item>
+	
+	<item type="text" color="oceanHL" start="4.51" effect="outlineBlack" >
+		<caption><![CDATA[
+			<title>BACKLIGHT V2 INTRO</title>
+			<description>works with text and external images</description>
+		]]></caption>
+	</item>
+	
+	
+	<item type="text" color="fireHL" start="9.02">
+		<caption><![CDATA[
+			<title>DYNAMIC COLORS</title>
+			<description>Use many different color gradients</description>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="purpleHL" start="13.36" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>AUDIO SYNC</title>
+			<description>Near perfect A/V sync time</description>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="limeHL" start="15.54" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>UNLIMITED IMAGES</title>
+		]]></caption>
+	</item>
+	
+	<item type="image" resource="resources/images/pngExample.png" color="oceanHL" start="16.71" effect="outlineBlack">	
+	</item>
+	
+	<item type="image" resource="resources/images/ActiveDen.png" color="oceanHL" start="19.93" burst="false" effect="outlineBlack">
+		
+	</item>
+	
+	
+	<item type="text" color="oceanHL" start="22.16" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>HERE COMES</title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="23.33" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>THE MESSAGE</title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="24.41" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>WATCH OUT</title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="24.90" wait="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<title><font size="60">EAT</font></title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="25.01" wait="3" burst="false" effect="outlineBlack">
+		<caption><![CDATA[
+			<title><font size="60">THIS</font></title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="25.12" wait="3" burst="false" effect="outlineBlack">
+		<caption><![CDATA[
+			<title><font size="60">HTML5</font></title>
+		]]></caption>
+	</item>
+	
+	<item type="image" resource="resources/images/newLogo.png" color="oceanHL" start="25.30" duration="6" wait="3">
+	</item>
+	
+	
+</config>

@@ -1,0 +1,117 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<config>
+	<intro fadeIn=".5" fadeOut=".5" loop="true" />
+	
+	<external font="resources/fonts/Sapir.swf" font2="resources/fonts/Vera.swf"  />
+	
+	<style><![CDATA[
+		title {
+			color: #FFD209;
+			font-family: Sapir Sans;
+			font-size: 50px;
+			text-align: left;
+		}
+		description {
+			color: #FFFFFF;
+			font-family: Sapir Sans;
+			font-size: 30px;
+			text-align: left;
+		}
+		
+		small {
+			color: #FFFFFF;
+			font-family: Sapir Sans;
+			font-size: 18px;
+			text-align: left;
+		}
+		
+		red {
+			color: #ED1C07;
+			font-family: Sapir Sans;
+			font-size: 40px;
+			text-align: left;
+		}
+		
+		grey {
+			color: #A0A0A0;
+			font-family: Sapir Sans;
+			font-size: 40px;
+			text-align: left;
+		}
+		
+		big {
+			color: #0082F5;
+			font-family: Bitstream Vera Sans;
+			font-size: 120px;
+			text-align: left;
+		}
+		
+		bebas {
+			color: #00C859;
+			font-family: Bitstream Vera Sans;
+			font-size: 35px;
+			text-align: left;
+		}
+		
+		bsmall {
+			color: #FFFFAD;
+			font-family: Bitstream Vera Sans;
+			font-size: 16px;
+			text-align: left;
+		}
+		
+	]]></style>   
+	 
+	   
+	<item type="text" color="monoHL" duration="4" wait="2" areaY="3"  maxLight="200" >
+		<caption><![CDATA[
+			<title><font color="#77C5FF">SAMPLE TEXT TITLE</font></title>
+			<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et</small>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="fireHL" duration="4" wait="2" areaY="4"  maxLight="20">
+		<caption><![CDATA[
+			<red>COUNDOWN<br><font color="#D0D0D0">EXAMPLE...</a></red>
+		]]></caption>
+	</item>
+	
+	<item type="text" duration=".5" areaX="4" areaY="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<big>5</big>
+		]]></caption>
+	</item>
+	<item type="text" duration=".5" areaX="4" areaY="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<big>4</big>
+		]]></caption>
+	</item>
+	<item type="text" duration=".5" areaX="4" areaY="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<big>3</big>
+		]]></caption>
+	</item>
+	<item type="text" duration=".5" areaX="4" areaY="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<big>2</big>
+		]]></caption>
+	</item>
+	<item type="text" duration=".5" areaX="4" areaY="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<big>1</big>
+		]]></caption>
+	</item>
+	
+	
+	<item type="text" color="limeHL" areaY="3" >
+		<caption><![CDATA[
+			<bebas>A DIFFERENT EMBEDDED FONT</bebas>
+			<bsmall>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et</bsmall>
+		]]></caption>
+	</item>
+	
+	
+	
+	
+	
+</config>

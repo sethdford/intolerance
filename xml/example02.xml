@@ -1,6 +1,6 @@
 <?xml version="1.0"  encoding="UTF-8"?>
 <config>
-	<intro fadeIn=".5" fadeOut="0" loop="false"/>
+	<intro fadeIn="1" fadeOut="0" loop="false"/>
 	 
 	
 	 

@@ -1,10 +1,10 @@
 <?xml version="1.0"  encoding="UTF-8"?>
 <config>
-	<intro fadeIn="1" fadeOut="0" loop="false"/>
+	<intro fadeIn="0" fadeOut="0" loop="false"/>
 	 
 	
 	 
 	
-	<item type="image" color="fire" areaY="2" areaX="2" start="0" duration="1" maxLight="10" resource="http://toratheus.googlecode.com/svn/trunk/resources/images/Sample.png" />
+	<item type="image" color="fire" areaY="2" areaX="2" start="0" duration="1" maxLight="0" resource="http://toratheus.googlecode.com/svn/trunk/resources/images/Sample.png" />
 	
 </config>

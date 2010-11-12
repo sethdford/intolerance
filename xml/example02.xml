@@ -3,8 +3,8 @@
 	<intro fadeIn="1" fadeOut="0" loop="false"/>
 	 
 	
-	<soundtrack resource="http://toratheus.googlecode.com/svn/trunk/resources/audio/ScottWillsOriginalIntro.mp3" volume="10" />
+	 
 	
-	<item type="image" color="fire" areaY="8" areaX="8" start="0" duration="5" maxLight="150" resource="http://toratheus.googlecode.com/svn/trunk/resources/images/Sample.png" />
+	<item type="image" color="fire" areaY="8" areaX="8" start="0" duration="3" maxLight="50" resource="http://toratheus.googlecode.com/svn/trunk/resources/images/Sample.png" />
 	
 </config>

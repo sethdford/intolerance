@@ -5,6 +5,6 @@
 	
 	 
 	
-	<item type="image" color="fire" areaY="2" areaX="2" start="0" duration="1" maxLight="7" resource="http://toratheus.googlecode.com/svn/trunk/resources/images/Sample.png" />
+	<item type="image" color="fire" areaY="2" areaX="2" start="0" duration="4" maxLight="7" resource="http://toratheus.googlecode.com/svn/trunk/resources/images/Sample.png" />
 	
 </config>

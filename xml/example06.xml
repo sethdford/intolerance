@@ -1,0 +1,170 @@
+<config>
+	
+	<intro fadeIn="0.5" fadeOut="1" loop="false"/>
+	
+	<background type="spectrum" />
+	
+	<soundtrack resource="resources/audio/me.mp3" volume="100" />
+	
+	<external font="resources/fonts/Sapir.swf" />
+	
+	<style>
+    <![CDATA[
+		title {
+			color: #FFD209;
+			font-family: Sapir Sans;
+			font-size: 50px;
+			text-align: left;
+		}
+		description {
+			color: #FFFFFF;
+			font-family: Sapir Sans;
+			font-size: 30px;
+			text-align: left;
+		}
+  
+  	big {
+			color: #0082F5;
+			font-family: Bitstream Vera Sans;
+			font-size: 120px;
+			text-align: left;
+		}
+	]]></style>
+
+
+
+  <item type="text" color="oceanHL" start="1" duration=".5"   effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<big>5</big>
+		]]>
+    </caption>
+  </item>
+  <item type="text" color="oceanHL" start="2" duration=".5"   effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<big>4</big>
+		]]>
+    </caption>
+  </item>
+  <item type="text" color="oceanHL"  start="3" duration=".5"  effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<big>3</big>
+		]]>
+    </caption>
+  </item>
+  <item type="text" color="oceanHL"  start="4" duration=".5"  effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<big>2</big>
+		]]>
+    </caption>
+  </item>
+  <item type="text" color="oceanHL" start="5" duration=".5"   effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<big>1</big>
+		]]>
+    </caption>
+  </item>
+	 
+	
+	
+	<item type="text" color="oceanHL" start="7.16" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>HERE COMES</title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="8.33" effect="outlineBlack">
+		<caption><![CDATA[
+			<title>THE MESSAGE....</title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="9.41" effect="outlineBlack">
+		<caption>
+      <![CDATA[
+				<big>WATCH OUT</big>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="10.20" wait="3" effect="outlineBlack">
+		<caption><![CDATA[
+			<title><font size="60">HERE</font></title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="11.30" wait="3" burst="false" effect="outlineBlack">
+		<caption><![CDATA[
+			<title><font size="60">WE</font></title>
+		]]></caption>
+	</item>
+	
+	<item type="text" color="oceanHL" start="11.40" wait="3" burst="false" effect="outlineBlack">
+		<caption><![CDATA[
+			<title><font size="60">COME</font></title>
+		]]></caption>
+	</item>
+
+  <item type="text" color="oceanHL" start="13.12" wait="3" burst="false" effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<title><font size="80">We</font></title>
+		]]>
+    </caption>
+  </item>
+
+  <item type="text" color="oceanHL" start="14.32" wait="3" burst="false" effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<title><font size="100">Are</font></title>
+		]]>
+    </caption>
+  </item>
+  
+	<item type="image" resource="resources/images/Sample.png" color="oceanHL" start="15.30" duration="6" wait="3">
+	</item>
+
+  <item type="text" color="oceanHL" start="25.00" wait="3" burst="false" effect="outlineBlack">
+    <caption>
+      <![CDATA[
+		 
+		]]>
+    </caption>
+  </item>
+  
+  <item type="text" color="fire" start="30.00" wait="0"  effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<description><font size="60">See You in Catacylsm</font></description>
+		]]>
+    </caption>
+  </item>
+
+  <item type="text" color="fire" start="38.00"  effect="outlineBlack">
+    <caption>
+      <![CDATA[
+			<description><font size="60">Horde Side</font></description>
+		]]>
+    </caption>
+  </item>
+
+  <item type="text" color="fire" start="39.00" wait="3" burst="false" effect="outlineBlack">
+    <caption>
+      <![CDATA[
+		 
+		]]>
+    </caption>
+  </item>
+  
+  <item type="text" color="fire" start="55.00" wait="3" burst="false" effect="outlineBlack">
+    <caption>
+      <![CDATA[
+		 
+		]]>
+    </caption>
+  </item>
+  
+</config>
